@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Deet-Coffee</title>
+	<link rel="stylesheet" href="static/css/font-awesome/css/font-awesome.min.css" />
+	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700,300italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="static/css/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" href="static/css/animat/animate.min.css" />
+	<link rel="stylesheet" href="static/css/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="static/css/nivo-lightbox/nivo-lightbox.css" />
+	<link rel="stylesheet" href="static/css/themes/default/default.css" />
+	<link rel="stylesheet" href="static/css/owl-carousel/owl.carousel.css" />
+	<link rel="stylesheet" href="static/css/owl-carousel/owl.theme.css" />
+	<link rel="stylesheet" href="static/css/owl-carousel/owl.transitions.css">
+	
+	<link rel="stylesheet" href="static/css/style.css" />
+	<link rel="stylesheet" href="static/css/responsive.css" />
+	<link href="static/css/business-casual.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+	<div class='preloader'><div class='loaded'>&nbsp;</div></div>
+	<header id="home" class="header">
+		<div class="main_menu_bg navbar-fixed-top wow slideInDown" data-wow-duration="1s">
+			<div class="container">
+				<div class="row">
+					<div class="nave_menu">
+					<nav class="navbar navbar-default">
+					  <div class="container-fluid">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+						  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						  </button>
+						  
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						  
+						  <ul class="nav navbar-nav navbar-right">
+							<li class="active"><a href="/index">HOME</a></li>
+							<li><a href="/index02">SERVICES</a></li>
+	
+							
+						  </ul>
+						</div><!-- /.navbar-collapse -->
+					  </div><!-- /.container-fluid -->
+					</nav>
+					</div>	
+				</div><!--End of row -->
+				
+			</div><!--End of container -->
+			
+		</div>
+	</header> <!--End of header -->
+	<br/>
+	<br/>
+	<br/>
+	
+	
+	<section id="banner" class="banner">
+		<div class="container">
+			<div class="row">
+				<div class="main_banner_area text-center">
+					<div class="col-md-5 col-sm-5 col-md-offset-7 col-sm-offset-7">
+						<div class="single_banner_text wow zoomIn" data-wow-duration="1s">
+                            
+						</div>
+					</div>
+                    <div class="parallax-content baner-content" id="home">
+                        <div class="container">
+                            <div class="text-content">
+                                <h2 style="color:rgb(25, 228, 25)"><em>Our</em> <span style="color:rgb(255, 251, 0)">Coffee and Tea</span> <span style="color:yellowgreen">is the Best</span></h2>
+                                <br><br>
+                                    <div>
+                                    <section class="filled">
+                                        <form action="index02" method="POST" enctype="multipart/form-data;charset=UTF-8">
+                                        {% csrf_token %}
+                                        
+                                        <div class="text-content" style="color: rgb(33, 70, 233);"><span style="color:rgb(211, 233, 13)">Icon</span><br><input class="filled" type="text" name="icon" value=""/></div>
+                                        <div class="spacing"  style="color:rgb(33, 70, 233)"><span style="color:rgb(211, 233, 13)">Title</Title> </span><br><input class="filled" type="text" name="title" value=""/></div>
+                                        <div class="spacing"   style="color: rgb(33, 70, 233)"><span style="color:rgb(211, 233, 13)">Detail </span><br><input class="filled" type="text" name="detail" value=""/></div><br>
+                                        <div class="primary-white-button"><button  type="submit">Submit</button></div>
+                                        <!-- <div class="primary-white-button">
+                                                <a href="#" class="scroll-link" data-id="about">Let's Start</a>
+                                        </div> -->
+                                        
+                                        </form>
+                                        <br />
+                                        <div>
+                                                <table style="width:100%; border: 1px solid white; padding: 1em; background: #fff;">
+                                                 <tr>
+                                                   <th><center>Icon</center></th>
+                                                   <th><center>Title</center></th>
+                                                   <th><center>Detail</center></th>
+                                                 </tr>
+                                                 {% for s in services %}
+                                                 <tr>
+                                                   <td> <i class="fa {{s.icon}}"></i> {{ s.icon }}</td>
+                                                   <td>{{ s.title }}</td>
+                                                   <td>{{ s.detail }}</td>
+                                                 </tr>
+                                                 {% endfor %}
+                                               </table> 
+                                               </div>
+                                               <br /><br />
+                
+                                    </section>
+                
+                
+                            </div>
+                        </div>
+                    </div>
+					
+					
+				
+				
+			</div>
+		</div>
+    </section><!-- End of Banner Section -->
+    
+    
+	
+	
+
+	
+
+	
+	
+	
+	
+	
+	
+
+	<script type="text/javascript" src="static/js/jquery/jquery.js"></script>
+	
+	<script type="text/javascript" src="static/js/script.js"></script>
+	
+	<script type="text/javascript" src="static/js/bootstrap/bootstrap.min.js"></script>
+	
+	<script type="text/javascript" src="static/js/fancybox/jquery.fancybox.pack.js"></script>
+	
+	<script type="text/javascript" src="static/js/nivo-lightbox/nivo-lightbox.min.js"></script>
+	
+	<script type="text/javascript" src="static/js/owl-carousel/owl.carousel.min.js"></script>
+	
+	
+	
+	<script type="text/javascript" src="static/js/jquery-easing/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="static/js/wow/wow.min.js"></script>
+</body>
+</html>
