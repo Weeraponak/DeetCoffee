@@ -1,4 +1,4 @@
-# Weeraponak
+# Weerapon
 websource project repo for https://weeraponak.pythonanywhere.com
 #   ตั้งค่าGit
 git config --global user.name "your_name"
