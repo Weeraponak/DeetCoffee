@@ -22,7 +22,6 @@ urlpatterns = [
     path('services', linuxappviews.services),
     path('admin/', admin.site.urls),
     path('index', linuxappviews.index),
-    path('index02', linuxappviews.index02),
     path('about', linuxappviews.about),
     path('products', linuxappviews.products),
     path('store', linuxappviews.store),
