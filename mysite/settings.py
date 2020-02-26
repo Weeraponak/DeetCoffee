@@ -25,7 +25,7 @@ SECRET_KEY = 'b@9txf9z_wz7z&!*uyy5cx+4ju-)zg3&$3g0-4xh!5&sd)9xr9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [u'weeraponak.pythonanywhere.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = [u'weerapon.pythonanywhere.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
