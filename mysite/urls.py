@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from linuxapp import views as linuxappviews
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 urlpatterns = [
     path('', linuxappviews.index),
@@ -25,4 +29,8 @@ urlpatterns = [
     path('about', linuxappviews.about),
     path('products', linuxappviews.products),
     path('store', linuxappviews.store),
+    path('register', linuxappviews.register),
+    path('login', linuxappviews.login),
+    path('logout', linuxappviews.logout),
 ]
+
