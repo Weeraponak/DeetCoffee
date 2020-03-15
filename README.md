@@ -1,5 +1,5 @@
 # Weerapon
-websource project repo for https://weeraponak.pythonanywhere.com
+websource project repo for https://weerapon.pythonanywhere.com
 #   ตั้งค่าGit
 git config --global user.name "your_name"
 git config --global user.email "your@email.com"
@@ -11,5 +11,7 @@ git commit -am "ข้อความอธิบายการเปลี่�
 git push origin <branch_name>
 
 git pull origin master
+
+
 
 
